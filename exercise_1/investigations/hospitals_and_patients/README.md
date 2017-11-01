@@ -1,4 +1,5 @@
 In order to find correlation, two tables are joined:
+
 a) eff_care_parquet (Effective Care) and
 
 b) sur_resp_parquet (Survey responses)

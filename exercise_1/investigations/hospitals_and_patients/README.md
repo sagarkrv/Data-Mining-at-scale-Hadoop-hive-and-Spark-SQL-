@@ -1,3 +1,7 @@
+Launcg using the command:
+
+/data/spark15/bin/spark-sql –master yarn-client –conf spark.ui.port=40445 –executor-memory 15g –hiveconf load_date=`date +%Y-%m-%d` –driver-memory 10g –queue default –num-executors 20 –conf spark.yarn.executor.memoryOverhead=4096 –queue Q1 -i ./hospitals_and_patients.sql
+
 In order to find correlation, two tables are joined:
 
 a) eff_care_parquet (Effective Care) and

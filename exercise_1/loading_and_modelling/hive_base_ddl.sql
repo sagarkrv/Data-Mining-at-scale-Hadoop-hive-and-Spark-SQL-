@@ -35,7 +35,6 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES
 (
 "separatorChar" = ",",
-"quoteChar"     = "'",
 "escapeChar"    = "\\"
 )
 STORED AS TEXTFILE
@@ -56,7 +55,6 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES
 (
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
@@ -88,7 +86,6 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES
 (
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
@@ -118,7 +115,6 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES
 (
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
@@ -129,8 +125,8 @@ DROP TABLE survey_responses;
 CREATE EXTERNAL TABLE survey_responses
 (
 Provider_Number string,
-Address string,
 Hospital_Name string,
+Address string,
 City string,
 State string,
 Zipcode string,
@@ -147,7 +143,6 @@ Communication_With_Doctors_Floor string,
 Communication_With_Doctors_Achievement_Threshold string,
 Communication_With_Doctors_Benchmark string,
 Communication_With_Doctors_Baseline_Rate string,
-Safety_Of_Care_National_Comparison_Footnote string,
 Communication_With_Doctors_Performance_Rate string,
 Communication_With_Doctors_Achievement_Points string,
 Communication_With_Doctors_Improvement_Points string,
@@ -207,7 +202,6 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES
 (
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE

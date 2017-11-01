@@ -1,3 +1,6 @@
+Launch the command
+/data/spark15/bin/spark-sql –master yarn-client –conf spark.ui.port=40445 –executor-memory 15g –hiveconf load_date=`date +%Y-%m-%d` –driver-memory 10g –queue default –num-executors 20 –conf spark.yarn.executor.memoryOverhead=4096 –queue Q1 -i ./hospital_variability.sql
+
 The procedures with the highest variability is calculated using the formula 
 range/std deviation
 

@@ -14,3 +14,6 @@ GROUP BY a.measure_id, a.measure_name
 HAVING fill_rate > 0.73
 ORDER BY variability DESC 
 ;
+
+EXIT;
+

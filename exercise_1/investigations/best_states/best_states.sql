@@ -1,3 +1,5 @@
+SET hive.cli.print.header=true;
+
 SELECT h.state,
     (
     CASE WHEN h.mortality_national_comparison = "Above the national average" THEN 2 

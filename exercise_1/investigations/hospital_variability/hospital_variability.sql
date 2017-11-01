@@ -1,3 +1,5 @@
+SET hive.cli.print.header=true;
+
 SELECT a.measure_id, a.measure_name, 
        round(COUNT(a.provider_id)/4812,3) fill_rate,
        min(int(a.score)) min_score, 

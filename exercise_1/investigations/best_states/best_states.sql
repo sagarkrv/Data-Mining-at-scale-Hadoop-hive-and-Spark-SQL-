@@ -58,3 +58,6 @@ WHERE h.hospital_overall_rating = 5
   AND h.provider_id = pc01.provider_id
   AND h.provider_id = op22.provider_id
 ORDER BY overall_score DESC, effective_care_score DESC LIMIT 10;
+
+EXIT;
+

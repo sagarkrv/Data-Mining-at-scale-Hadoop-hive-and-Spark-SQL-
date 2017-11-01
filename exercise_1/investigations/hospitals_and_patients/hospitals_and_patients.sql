@@ -1,3 +1,5 @@
+SET hive.cli.print.header=true;
+
 SELECT corr(int(trim(substr(s.Overall_Rating_of_Hospital_Dimension_Score,1,2))), int(imm2.score)) AS imm2_correlation_coef, 
        corr(int(trim(substr(s.Overall_Rating_of_Hospital_Dimension_Score,1,2))), int(imm3.score)) AS imm3_correlation_coef, 
        corr(int(trim(substr(s.Overall_Rating_of_Hospital_Dimension_Score,1,2))), int(pc01.score)) AS pc01_correlation_coef, 
@@ -20,3 +22,6 @@ WHERE
       s.Overall_Rating_of_Hospital_Dimension_Score NOT LIKE 'Not%'
 ORDER BY imm2_correlation_coef + imm3_correlation_coef + pc01_correlation_coef + op22_correlation_coef DESC
 ;
+
+EXIT;
+
